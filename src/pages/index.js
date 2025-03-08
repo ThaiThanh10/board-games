@@ -1,0 +1,5 @@
+export { default as HomePage } from "./HomePage"
+export { default as Courses } from "./Courses"
+export { default as Worksheets } from "./Worksheets"
+export { default as Puzzles } from "./Puzzles"
+export { default as BlogPage } from "./BlogPage"
