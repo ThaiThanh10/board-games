@@ -26,18 +26,18 @@ const Header = () => {
                 >
                     Worksheets{" "}
                 </Link>
-                <a
-                    href="/puzzles"
+                <Link
+                    to="/puzzles"
                     className="px-2 py-1 rounded-full link"
                 >
                     Puzzles{" "}
-                </a>
-                <a
-                    href="/blog"
+                </Link>
+                <Link
+                    to="/blog"
                     className="px-2 py-1 rounded-full link"
                 >
                     Blog{" "}
-                </a>
+                </Link>
             </nav>{" "}
             <button
                 type="button"
