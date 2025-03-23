@@ -6,76 +6,41 @@ const Footer = () => {
         <footer class="py-4 mt-8 bg-black/30 w-full svelte-9n1dia">
             <div class="flex flex-col md:flex-row gap-4 items-start justify-between container px-4 lg:px-8 mx-auto">
                 <div class="flex flex-col gap-2">
-                    <Link
-                        class="link"
-                        to="/courses"
+                    <a
+                        href="/public/Unbox-Wisdom.pdf"
+                        target="_blank"
+                        // className="px-2 py-1 rounded-full link"
+                        className="link"
                     >
-                        Courses
-                    </Link>{" "}
-                    <Link
+                        Unbox Wisdom Class{" "}
+                    </a>
+                    {/* <Link
                         class="link"
                         to="/worksheets"
                     >
                         Worksheets
-                    </Link>{" "}
-                    <p class="link">Bundles</p>{" "}
+                    </Link>{" "} */}
                     <Link
                         class="link"
                         to="/puzzles"
                     >
                         Puzzles
                     </Link>{" "}
-                    <p
-                        class="link"
-                        href="/privacy"
-                    >
-                        Privacy
-                    </p>{" "}
-                    <p
-                        class="link"
-                        href="/terms"
-                    >
-                        Terms
-                    </p>
-                </div>{" "}
-                <div class="flex flex-col gap-2">
                     <Link
-                        href="/blog"
+                        to="/blog"
                         class="link"
                     >
                         Blog
                     </Link>
-                    <p
-                        // href="/newsletter"
+                    <p class="link">Critical Thinking Resources</p>
+                    <p class="link">Privacy</p>{" "}
+                    {/* <p
                         class="link"
                     >
-                        Newsletter
-                    </p>
-                    <p
-                        href="/logical-fallacy-handbook"
-                        class="link"
-                    >
-                        Logical Fallacy Handbook
-                    </p>
-                    <p
-                        href="/resources"
-                        class="link"
-                    >
-                        Critical Thinking Resources
-                    </p>
-                    <p
-                        href="/educators"
-                        class="link"
-                    >
-                        For Educators
-                    </p>
-                    <p
-                        href="/support-us"
-                        class="link"
-                    >
-                        Support Us
-                    </p>
+                        Terms
+                    </p> */}
                 </div>{" "}
+                <div class="flex flex-col gap-2"></div>{" "}
                 <div class="flex flex-col gap-2 justify-between self-stretch items-start">
                     <div>
                         <h4 class="font-bold mb-2">Follow me on</h4>{" "}

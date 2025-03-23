@@ -515,11 +515,11 @@ const BlogPage = () => {
                     </div>
                 </div>
             </section>
-            <CoursesList heading="Courses" />
+            {/* <CoursesList heading="Courses" />
             <CoursesList
                 heading="Worksheets"
                 arr={[1, 2, 3, 4, 5]}
-            />
+            /> */}
         </main>
     )
 }

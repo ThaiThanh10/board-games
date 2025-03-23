@@ -14,14 +14,12 @@ const HomePage = () => {
                         skills to communicate clearly, think logically, and make well-informed
                         decisions.
                     </p>
-                    <p>
-                        <button
-                            type="button"
-                            class=" align-middle select-none transition-all relative rounded-lg text-orange-50 bg-orange-500 enabled:hover:bg-orange-600 shadow-lg dark:bg-orange-700 dark:enabled:hover:bg-orange-800  active:shadow-sm active:translate-y-1 text-2xl px-5 py-3 text-center      svelte-1wj6ij5"
-                        >
-                            Explore Courses{" "}
-                        </button>
-                    </p>
+                    <button
+                        type="button"
+                        class=" align-middle select-none transition-all relative rounded-lg text-orange-50 bg-orange-500 enabled:hover:bg-orange-600 shadow-lg dark:bg-orange-700 dark:enabled:hover:bg-orange-800  active:shadow-sm active:translate-y-1 text-2xl px-5 py-3 text-center      svelte-1wj6ij5"
+                    >
+                        Explore Courses{" "}
+                    </button>
                 </div>
             </section>
             {/* // Guarantee */}
@@ -303,81 +301,103 @@ const HomePage = () => {
                     </svg>{" "}
                 </button>
             </section>
-            {/* // Video */}
-            {[1, 2, 3, 4].map((item) => (
-                <section class="lg:flex lg:items-start lg:justify-center container mx-auto px-4 md:px-8 mb-12 lg:mt-24  ">
-                    <div class="w-full m-0 relative bg-black overflow-hidden rounded-2xl aspect-video mb-1 lg:w-6/12 xl:w-7/12 2xl:w-9/12 lg:ml-8 order-1">
-                        <mux-player
-                            disable-cookie="true"
-                            respect-do-not-track="true"
-                            disable-tracking="true"
-                            playback-type="on-demand"
-                            playback-id="N64PWOCEGbaIPJKKB7cU6vF02gwDy1mSAoB8HNFHRHmk"
-                            thumbnail-time="5"
-                            class="w-full h-full m-0"
-                            start-time="0"
-                        ></mux-player>{" "}
-                    </div>{" "}
-                    <div class="prose-headings:mb-2 w-full lg:w-6/12 xl:w-5/12 2xl:w-4/12  prose md:prose-xl ">
-                        <h2>
-                            <a
-                                class="link"
-                                href="/courses/fallacy-detectors-1"
-                            >
-                                Fallacy Detectors
-                            </a>
-                        </h2>{" "}
-                        <p>
-                            Develop the skills to tackle logical fallacies through a series of 10
-                            science-fiction videos with activities.{" "}
-                            <strong>Recommended for ages 8 and up.</strong>
-                        </p>
-                        <div class="not-prose flex flex-col items-center md:flex-row md:items-center lg:flex-col lg:items-start gap-4">
-                            <div class="flex flex-row flex-nowrap gap-4">
-                                <div class="relative  ">
-                                    <button
-                                        type="button"
-                                        class="whitespace-nowrap align-middle select-none transition-all relative rounded-lg text-orange-50 bg-orange-500 enabled:hover:bg-orange-600 shadow-lg dark:bg-orange-700 dark:enabled:hover:bg-orange-800  active:shadow-sm active:translate-y-1 text-xl px-5 py-3 text-center w-full     svelte-1wj6ij5"
-                                    >
-                                        Buy Now{" "}
-                                        <small class="block text-md">
-                                            15&nbsp;US$ for 12 lessons
-                                        </small>{" "}
-                                    </button>{" "}
-                                </div>{" "}
-                                <div class="relative ">
-                                    <button
-                                        type="button"
-                                        class="h-full align-middle select-none transition-all relative rounded-lg border border-orange-500 text-orange-500 enabled:hover:bg-orange-500 enabled:hover:bg-opacity-5 dark:border-orange-700   text-lg px-4 py-2 text-center w-full     svelte-1wj6ij5"
-                                    >
-                                        <span
-                                            class="text-3xl"
-                                            data-svelte-h="svelte-jqsl8h"
-                                        >
-                                            🎁
-                                        </span>{" "}
-                                        <small class="block text-sm">Buy as a gift</small>{" "}
-                                    </button>
-                                </div>{" "}
-                            </div>{" "}
-                            <span>
-                                Or{" "}
-                                <a
-                                    class="link"
-                                    href="/courses/fallacy-detectors-1/lessons"
+            {/* Child Development */}
+            <section className="container py-20 ">
+                <div class="prose-headings:mb-2 mx-auto text-center child-development prose md:prose-xl ">
+                    <h2>Child Development</h2>
+                    <p className=" pt-5 pb-10 ">
+                        Studies have shown roleplaying games to induce improvements in life skills
+                        such as problem solving, organization, responsibility, leadership,
+                        creativity, teamwork, social and emotional competencies as well as academic
+                        engagement and motivation. Bowman & Standiford, 2015; Dyson et al. 2016;
+                        Heinz & Prager, 2019; Ruff 2021
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap justify-center items-center gap-15">
+                        <div className="max-w-[320px] p-6 text-center border border-white rounded-3xl ">
+                            <h3 className="text-2xl font-semibold pb-5 ">Social Skills</h3>
+                            <div className="grid place-items-center mb-5 ">
+                                <svg
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    strokeWidth="0"
+                                    viewBox="0 0 640 512"
+                                    height="60px"
+                                    width="60px"
+                                    xmlns="http://www.w3.org/2000/svg"
                                 >
-                                    Try First Lesson for Free
-                                </a>
-                            </span>
+                                    <path d="M434.7 64h-85.9c-8 0-15.7 3-21.6 8.4l-98.3 90c-.1.1-.2.3-.3.4-16.6 15.6-16.3 40.5-2.1 56 12.7 13.9 39.4 17.6 56.1 2.7.1-.1.3-.1.4-.2l79.9-73.2c6.5-5.9 16.7-5.5 22.6 1 6 6.5 5.5 16.6-1 22.6l-26.1 23.9L504 313.8c2.9 2.4 5.5 5 7.9 7.7V128l-54.6-54.6c-5.9-6-14.1-9.4-22.6-9.4zM544 128.2v223.9c0 17.7 14.3 32 32 32h64V128.2h-96zm48 223.9c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM0 384h64c17.7 0 32-14.3 32-32V128.2H0V384zm48-63.9c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16c0-8.9 7.2-16 16-16zm435.9 18.6L334.6 217.5l-30 27.5c-29.7 27.1-75.2 24.5-101.7-4.4-26.9-29.4-24.8-74.9 4.4-101.7L289.1 64h-83.8c-8.5 0-16.6 3.4-22.6 9.4L128 128v223.9h18.3l90.5 81.9c27.4 22.3 67.7 18.1 90-9.3l.2-.2 17.9 15.5c15.9 13 39.4 10.5 52.3-5.4l31.4-38.6 5.4 4.4c13.7 11.1 33.9 9.1 45-4.7l9.5-11.7c11.2-13.8 9.1-33.9-4.6-45.1z"></path>
+                                </svg>
+                            </div>
+                            <div className="p-5 text-xl font-light italic ">
+                                <p className="pb-5">
+                                    "Emma gets to collaborate with kids outside her friends circle."{" "}
+                                </p>
+                                <p>Emma's parents</p>
+                                <p>British International School</p>
+                            </div>
+                        </div>
+                        <div className="max-w-[320px] p-6 text-center border border-white rounded-3xl ">
+                            <h3 className="text-2xl font-semibold pb-5 ">Emotional Skills</h3>
+                            <div className="grid place-items-center mb-5 ">
+                                <svg
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    strokeWidth="0"
+                                    viewBox="0 0 512 512"
+                                    height="60px"
+                                    width="60px"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                                </svg>
+                            </div>
+                            <div className="p-5 text-xl font-light italic ">
+                                <p className="pb-5">
+                                    "Felicia adores the close friendships she made through
+                                    UnboxWisdom."{" "}
+                                </p>
+                                <p>Felicia's parents</p>
+                                <p>Engelska Skolan Norr</p>
+                            </div>
+                        </div>
+                        <div className="max-w-[320px] p-6 text-center border border-white rounded-3xl ">
+                            <h3 className="text-2xl font-semibold pb-5 ">Analytical skills</h3>
+                            <div className="grid place-items-center mb-5 ">
+                                <svg
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    strokeWidth={0}
+                                    viewBox="0 0 576 512"
+                                    height="60px"
+                                    width="60px"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M208 0c-29.9 0-54.7 20.5-61.8 48.2-.8 0-1.4-.2-2.2-.2-35.3 0-64 28.7-64 64 0 4.8.6 9.5 1.7 14C52.5 138 32 166.6 32 200c0 12.6 3.2 24.3 8.3 34.9C16.3 248.7 0 274.3 0 304c0 33.3 20.4 61.9 49.4 73.9-.9 4.6-1.4 9.3-1.4 14.1 0 39.8 32.2 72 72 72 4.1 0 8.1-.5 12-1.2 9.6 28.5 36.2 49.2 68 49.2 39.8 0 72-32.2 72-72V64c0-35.3-28.7-64-64-64zm368 304c0-29.7-16.3-55.3-40.3-69.1 5.2-10.6 8.3-22.3 8.3-34.9 0-33.4-20.5-62-49.7-74 1-4.5 1.7-9.2 1.7-14 0-35.3-28.7-64-64-64-.8 0-1.5.2-2.2.2C422.7 20.5 397.9 0 368 0c-35.3 0-64 28.6-64 64v376c0 39.8 32.2 72 72 72 31.8 0 58.4-20.7 68-49.2 3.9.7 7.9 1.2 12 1.2 39.8 0 72-32.2 72-72 0-4.8-.5-9.5-1.4-14.1 29-12 49.4-40.6 49.4-73.9z"
+                                        stroke="none"
+                                    />
+                                </svg>
+                            </div>
+                            <div className="p-5 text-xl font-light italic ">
+                                <p className="pb-5">
+                                    "Unbox Wisdom has taught Oliver the importance of strategic
+                                    thinking."{" "}
+                                </p>
+                                <p>Oliver's parents</p>
+                                <p>Engelska Skolan Norr</p>
+                            </div>
                         </div>
                     </div>
-                </section>
-            ))}
+                </div>
+            </section>
 
-            <CoursesList heading="Worksheets &amp; Lesson Plans" />
+            {/* <CoursesList heading="Worksheets &amp; Lesson Plans" /> */}
+
             {/* // Story Section */}
             <section class="container mx-auto px-4 md:px-8 my-12">
-                <div class="prose-headings:mb-2 mx-auto   prose md:prose-xl ">
+                <div class="prose-headings:mb-2 mx-auto  prose md:prose-xl ">
                     <h2>Critikid’s Story</h2>
                     <p>
                         My name is Stephanie Simoes. I started Critikid because I noticed a shortage
@@ -411,6 +431,10 @@ const HomePage = () => {
             </section>
             {/* // Misson */}
             <section class="container mx-auto px-4 md:px-8 my-12">
+                <div className="prose-headings:mb-2 mx-auto mb-10 prose md:prose-xl ">
+                    {" "}
+                    <h2>FAQ</h2>
+                </div>
                 <div
                     class="flex flex-col gap-4 max-w-3xl mx-auto"
                     itemscope=""
@@ -547,6 +571,99 @@ const HomePage = () => {
                     </details>
                 </div>
             </section>
+
+            {/* Testimonials */}
+            <section className="container py-20 ">
+                <div class="prose-headings:mb-2 mx-auto pb-15 text-center child-development prose md:prose-xl ">
+                    <h2>Testimonials</h2>
+                </div>
+                <div>
+                    <div class="flex flex-wrap justify-center items-center gap-15">
+                        <div className="max-w-[320px] p-6 text-center border border-white rounded-3xl ">
+                            <h3 className="text-2xl font-semibold pb-5 ">Overall satisfaction</h3>
+                            <div className="grid place-items-center mb-5 ">
+                                <svg
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    strokeWidth={0}
+                                    viewBox="0 0 576 512"
+                                    height="60px"
+                                    width="60px"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                        stroke="none"
+                                    />
+                                </svg>
+                            </div>
+                            <div className="p-5 text-xl font-light italic ">
+                                <p className="pb-5">
+                                    "The best thing we have ever done is sign our daughter up for
+                                    UnboxWisdom."
+                                </p>
+                                <p>Emma's parents</p>
+                                <p>British International School</p>
+                            </div>
+                        </div>
+                        <div className="max-w-[320px] p-6 text-center border border-white rounded-3xl ">
+                            <h3 className="text-2xl font-semibold pb-5 ">Weekly effect</h3>
+                            <div className="grid place-items-center mb-5 ">
+                                <svg
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    strokeWidth={0}
+                                    viewBox="0 0 512 512"
+                                    height="60px"
+                                    width="60px"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M224 96l16-32 32-16-32-16-16-32-16 32-32 16 32 16 16 32zM80 160l26.66-53.33L160 80l-53.34-26.67L80 0 53.34 53.33 0 80l53.34 26.67L80 160zm352 128l-26.66 53.33L352 368l53.34 26.67L432 448l26.66-53.33L512 368l-53.34-26.67L432 288zm70.62-193.77L417.77 9.38C411.53 3.12 403.34 0 395.15 0c-8.19 0-16.38 3.12-22.63 9.38L9.38 372.52c-12.5 12.5-12.5 32.76 0 45.25l84.85 84.85c6.25 6.25 14.44 9.37 22.62 9.37 8.19 0 16.38-3.12 22.63-9.37l363.14-363.15c12.5-12.48 12.5-32.75 0-45.24zM359.45 203.46l-50.91-50.91 86.6-86.6 50.91 50.91-86.6 86.6z"
+                                        stroke="none"
+                                    />
+                                </svg>
+                            </div>
+                            <div className="p-5 text-xl font-light italic ">
+                                <p className="pb-5">
+                                    "Daniela looks forward to UnboxWisdom all week and is walking on
+                                    air for hours after it’s over."
+                                </p>
+                                <p>Daniela's parents</p>
+                                <p>British International School</p>
+                            </div>
+                        </div>
+                        <div className="max-w-[320px] p-6 text-center border border-white rounded-3xl ">
+                            <h3 className="text-2xl font-semibold pb-5 ">Educational Benefit</h3>
+                            <div className="grid place-items-center mb-5 ">
+                                <svg
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    strokeWidth={0}
+                                    viewBox="0 0 448 512"
+                                    height="60px"
+                                    width="60px"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"
+                                        stroke="none"
+                                    />
+                                </svg>
+                            </div>
+                            <div className="p-5 text-xl font-light italic ">
+                                <p className="pb-5">
+                                    "Our students have improved their vocabulary and ability to
+                                    collaborate."
+                                </p>
+                                <p>After School Care Supervisor</p>
+                                <p>Kista International School</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <ComingSoon />
         </main>
     )

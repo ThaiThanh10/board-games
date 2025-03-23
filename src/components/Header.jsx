@@ -14,18 +14,19 @@ const Header = () => {
                 />
             </Link>{" "}
             <nav className="flex gap-0 items-center justify-center flex-1 max-md:order-1 md:justify-end xs:border-x border-b border-border-highlight xs:rounded-full xs:px-4 py-2 md:flex-grow-0 md:justify-self-end max-xs:-mx-4 lg:mr-28 ">
-                <Link
-                    to={"/courses"}
+                <a
+                    href="/public/Unbox-Wisdom.pdf"
+                    target="_blank"
                     className="px-2 py-1 rounded-full link"
                 >
-                    Courses{" "}
-                </Link>
-                <Link
+                    Class{" "}
+                </a>
+                {/* <Link
                     to="/worksheets"
                     className="px-2 py-1 rounded-full link"
                 >
                     Worksheets{" "}
-                </Link>
+                </Link> */}
                 <Link
                     to="/puzzles"
                     className="px-2 py-1 rounded-full link"
